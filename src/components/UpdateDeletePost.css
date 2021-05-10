@@ -1,0 +1,13 @@
+.log-wrapper {
+  margin: 50px, 150px;
+}
+
+.log {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  flex: auto;
+}
