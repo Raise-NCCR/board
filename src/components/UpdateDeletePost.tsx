@@ -2,7 +2,6 @@ import React, { useState, useContext, useCallback } from "react";
 import { updatePost, deletePost } from "../firebase";
 import { FirebaseContext } from "../contexts";
 import { Post } from '../models';
-import './UpdateDeletePost.css';
 
 const UpdateDeletePost: React.FC<{ post: Post}> = ({post}) => {
   const [input, setInput] = useState('');
@@ -36,8 +35,8 @@ const UpdateDeletePost: React.FC<{ post: Post}> = ({post}) => {
 
   let Log;
   if (post.creater !== user?.email) {
-    Log = (
-      <div className='log-wrapper'>
+     Log = (
+      <div className='log'>
         {post.content}
       </div>
     );
@@ -45,7 +44,7 @@ const UpdateDeletePost: React.FC<{ post: Post}> = ({post}) => {
     Log = (
       <div className='log-wrapper'>
         <div className='log'>
-          <textarea onChange={(e) => setInput(e.target.value)}>
+          <textarea className='input' onChange={(e) => setInput(e.target.value)}>
             {post.content}
           </textarea>
           <div className='button'>

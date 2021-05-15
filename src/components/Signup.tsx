@@ -15,20 +15,20 @@ const Signup: React.FC<RouteComponentProps> = ({ history }) => {
   )
 
   return (
-    <>
-      <div>
-        <span>サインアップ</span>
+    <div className='wrapper'>
+      <div className='formwrapper'>
+        <h2>サインアップ</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <input name='email' type='email' placeholder='Eメール' />
+          </div>
+          <div>
+            <input name='password' type='password' placeholder='パスワード' />
+          </div>
+          <button type='submit'>サインアップ</button>
+        </form>
       </div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input name='email' type='email' placeholder='Eメール' />
-        </div>
-        <div>
-          <input name='password' type='password' placeholder='パスワード' />
-        </div>
-        <button type='submit'>サインアップ</button>
-      </form>
-    </>
+    </div>
   )
 }
 

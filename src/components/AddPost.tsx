@@ -24,14 +24,22 @@ const AddPost: React.FC = () => {
   )
 
   return (
-    <div>
-      <textarea
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={onAdd} disabled={!input}>
-        送信
-      </button>
+    <div className='input-wrapper'>
+      <h3>入力</h3>
+      <div className='form-wrapper'>
+        <textarea
+          className='input'
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button
+          className='button'
+          onClick={onAdd}
+          disabled={!input}
+        >
+          送信
+        </button>
+      </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Home = () => {
   const { user } = useContext(FirebaseContext)
 
   return (
-    <>
+    <div>
       <header>
         <h1>Home</h1>
       </header>
@@ -24,7 +24,7 @@ const Home = () => {
           <button onClick={signout}>ログアウト</button>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 

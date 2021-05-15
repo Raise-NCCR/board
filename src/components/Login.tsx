@@ -3,7 +3,6 @@ import { withRouter, RouteComponentProps } from 'react-router-dom';
 
 import { signin } from '../firebase';
 import paths from '../paths';
-import './Login.css';
 
 const Login: React.FC<RouteComponentProps> = ({ history }) => {
   const handleSubmit = useCallback(
@@ -19,7 +18,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div>
       <div className="wrapper">
-        <div className="formwrapper">
+        <div className="form-wrapper">
           <h2>ログイン</h2>
           <form className="form" onSubmit={handleSubmit}>
             <div>
