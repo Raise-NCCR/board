@@ -20,6 +20,7 @@ const AddPost: React.FC = () => {
 
       setInput('');
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [input]
   )
 

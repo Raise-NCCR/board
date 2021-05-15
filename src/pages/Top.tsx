@@ -11,6 +11,7 @@ const Top: React.FC<RouteComponentProps> = ({ history }) => {
 
   useEffect(() => {
     user && history.push(paths.home)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [history]);
 
   return (

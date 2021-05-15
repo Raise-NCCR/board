@@ -19,6 +19,7 @@ const UpdateDeletePost: React.FC<{ post: Post}> = ({post}) => {
 
       alert('更新しました。');
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [input]
   );
 
@@ -31,6 +32,7 @@ const UpdateDeletePost: React.FC<{ post: Post}> = ({post}) => {
       creater: post.creater,
       createdAt: post.createdAt,
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let Log;
