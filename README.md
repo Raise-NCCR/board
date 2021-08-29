@@ -1,3 +1,6 @@
+Firebase Auth を利用した認証機能を付けた掲示板アプリのようなもの。<br>
+CSS が苦手過ぎて見た目はただのHTMLの状態になっている。
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
